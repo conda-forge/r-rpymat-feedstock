@@ -25,7 +25,6 @@ requirements:
     - {{ posix }}zip               # [win]
     - cross-r-base {{ r_base }}    # [build_platform != target_platform]
   host:
-    - python
     - r-base
     - r-irkernel >=1.3
     - r-fastmap >=1.1.0
@@ -35,7 +34,6 @@ requirements:
     - r-reticulate >=1.21
     - r-rstudioapi >=0.13
   run:
-    - python
     - r-base
     - r-irkernel >=1.3
     - r-fastmap >=1.1.0

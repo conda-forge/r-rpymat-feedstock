@@ -1,11 +1,11 @@
-About r-rpymat
-==============
+About r-rpymat-feedstock
+========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-rpymat-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/dipterix/rpymat
 
 Package license: Apache-2.0
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-rpymat-feedstock/blob/main/LICENSE.txt)
 
 Summary: Aims to create a single isolated 'Miniconda' and 'Python' environment for reproducible
 pipeline scripts. The package provides utilities to run system command within the

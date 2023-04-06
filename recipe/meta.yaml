@@ -14,7 +14,7 @@ source:
 
 build:
   merge_build_host: true  # [win]
-  number: 0
+  number: 1
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -45,8 +45,8 @@ requirements:
 
 test:
   commands:
-    - $R -e "library('rpymat')"           # [not win]
-    - "\"%R%\" -e \"library('rpymat')\""  # [win]
+    - $R -e "library('rpymat'); stopifnot(identical(Sys.getenv('R_RPYMAT_CONDA_EXE'), \"$CONDA_EXE\"))"           # [not win]
+    - "\"%R%\" -e \"library('rpymat'); stopifnot(identical(Sys.getenv('R_RPYMAT_CONDA_EXE'), '%CONDA_EXE%'))\""  # [win]
 
 about:
   home: https://github.com/dipterix/rpymat

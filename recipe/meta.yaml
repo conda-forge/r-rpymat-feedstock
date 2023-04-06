@@ -1,4 +1,4 @@
-{% set version = "0.1.4" %}
+{% set version = "0.1.5" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/rpymat_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/rpymat/rpymat_{{ version }}.tar.gz
-  sha256: 48f65689c2db4ea2d19ab897d15fdf474b473e34b60355e4dc819c68d021619e
+  sha256: 90721f5c92f07475bb97de9eb45075069a55d74dbd5217274d624797f22ba4ca
 
 build:
   merge_build_host: true  # [win]

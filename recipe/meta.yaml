@@ -19,6 +19,8 @@ build:
   rpaths:
     - lib/R/lib/
     - lib/
+  script_env:
+    - RPYMAT_BUILDER_WIN=1  # [win]
 
 requirements:
   build:
